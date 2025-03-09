@@ -180,7 +180,7 @@ export function Solutions() {
               href="/contact"
               className="bg-white text-gray-900 rounded-full px-8 py-4 font-semibold hover:shadow-lg transition-all duration-200 hover:scale-105"
             >
-              Let's Build Something Extra-ordinary Together
+              Let's Build Something 
             </Link>
           </div>
         </motion.div>
