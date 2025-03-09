@@ -1,125 +1,64 @@
 "use client";
-
-
-
-
-
-
-
 import { motion } from "framer-motion";
-
-
-
-import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
-
-
-
+import { MapPin, Mail, Phone, Linkedin, Twitter, Instagram, Facebook } from "lucide-react";
 import Link from "next/link";
 
+type ContactInfo = {
+  icon: any;
+  label: string;
+  value: string;
+  href: string;
+};
 
+type SocialLink = {
+  icon: any;
+  label: string;
+  href: string;
+};
 
-
-
-
-
-const contactInfo = [
-
-
-
+const contactInfo: ContactInfo[] = [
   {
-
-
-
     icon: Mail,
-
-
-
     label: "Email",
-
-
-
     value: "contact@hocmillztech.com",
-
-
-
     href: "mailto:contact@hocmillztech.com"
-
-
-
   },
-
-
-
   {
-
-
-
     icon: Phone,
-
-
-
     label: "Phone",
-
-
-
     value: "+2349059612415",
-
-
-
     href: "tel:+2349059612415"
-
-
-
   },
-
-
-
   {
-
-
-
     icon: MapPin,
-
-
-
-    label: "Address",
-
-
-
-    value: "Space A3, Dolaris Plaza, Sars Road P.H Rivers State",
-
-
-
-    href: ""
-
-
-
+    label: "Location",
+    value: "Lagos, Nigeria",
+    href: "https://maps.google.com/?q=Lagos,Nigeria"
   }
-
-
-
 ];
 
-
-
-
-
-
-
-const socialLinks = [
-
-
-
-
-
-
+const socialLinks: SocialLink[] = [
+  {
+    icon: Linkedin,
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/hocmillz-ai-agency/"
+  },
+  {
+    icon: Twitter,
+    label: "Twitter",
+    href: "https://x.com/hocmillzai?t=lxPgemNmxA0q2L0CcEAZ3A&s=09"
+  },
+  {
+    icon: Facebook,
+    label: "Facebook",
+    href: "https://www.facebook.com/share/1E6QWNRpaL/"
+  },
+  {
+    icon: Instagram,
+    label: "Instagram",
+    href: "https://www.instagram.com/hocmillzaiagency?igsh=MW8xYjZuOGhiZmtpaw=="
+  }
 ];
-
-
-
-
-
-
 
 export function ContactDetails() {
 
@@ -202,6 +141,8 @@ export function ContactDetails() {
 
 
         </motion.div>
+
+
 
 
 
@@ -309,6 +250,7 @@ export function ContactDetails() {
 
 
 
+
         <motion.div
 
 
@@ -401,10 +343,4 @@ export function ContactDetails() {
 
 
 
-} 
-
-
-
-
-
-
+}
